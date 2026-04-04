@@ -27,7 +27,7 @@ export default function StatsRow() {
             ATH
           </p>
           <p className="mt-2 font-display text-xl font-bold leading-tight text-white sm:text-2xl">
-            ${stats.athMc > 0 ? (stats.athMc >= 1000000 ? (stats.athMc / 1000000).toFixed(1) + 'M' : (stats.athMc / 1000).toFixed(0) + 'K') : '0'}
+            {stats.athMc}
           </p>
         </div>
       </div>

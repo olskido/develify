@@ -3,6 +3,8 @@
  * Optional: mintAddress (live DexScreener chart), pumpFunUrl, xCommunityUrl.
  */
 
+import { Currency } from "lucide-react"
+
 
 /** Site-wide socials (dev) */
 export const social = {
@@ -30,6 +32,8 @@ export const projects = [
     image: '/images/warbros-banner.png',
     heroImage: '/images/warbros-banner.png',
     athMc: '$403,000',
+    currentMc: '$4,000',
+    ath: '$403,000'
   },
   {
     id: 'book-of-memes',
@@ -39,6 +43,8 @@ export const projects = [
     image: '/images/book-of-memes-banner.png',
     heroImage: '/images/book-of-memes-banner.png',
     athMc: '$38,000',
+    currentMc: '$1,500',
+    ath: '$38,000'
   },
   {
     id: 'Unstable Donald Trump',
@@ -58,6 +64,8 @@ export const projects = [
     image: '/images/emojew.png',
     heroImage: '/images/emojew.png',
     athMc: '$68,000',
+    currentMc: '$1,600',
+    ath: '$68,000'
   },
 
   {
@@ -68,7 +76,8 @@ export const projects = [
     image: '/images/patty.png',
     heroImage: '/images/patty.png',
     athMc: '$195,000',
-
+    currentMc: '$1,900',
+    ath: '$195,000'
   },
   {
     id: 'whalepin',
@@ -78,6 +87,8 @@ export const projects = [
     image: '/images/whalepippin.png',
     heroImage: '/images/whalepippin.png',
     athMc: '$64,000',
+    currentMc: '$1,600',
+
   },
 
   {
