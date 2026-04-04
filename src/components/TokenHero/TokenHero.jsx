@@ -1,11 +1,11 @@
 export default function TokenHero({ ticker, currentCap, athTarget, imageUrl }) {
   return (
     <section className="relative min-h-[220px] overflow-hidden sm:min-h-[280px] lg:min-h-[320px]">
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 bg-[#0d0e12]">
         <img
           src={imageUrl}
           alt={`${ticker} Hero`}
-          className="h-full w-full object-contain bg-[#0d0e12] opacity-40"
+          className="w-full h-full object-cover object-top opacity-50 block"
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-[#0d0e12] via-[#0d0e12]/85 to-transparent pointer-events-none" />

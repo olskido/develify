@@ -26,8 +26,8 @@ export function LiveTokensProvider({ children }) {
     const [tokens, setTokens] = useState(staticProjects);
     const [stats, setStats] = useState({
         launched: targetCAs.length,
-        bonded: 0,
-        athMc: 0
+        bonded: 8,
+        athMc: '$403K'
     });
 
     useEffect(() => {
@@ -44,12 +44,6 @@ export function LiveTokensProvider({ children }) {
                     data.pairs.forEach(p => {
                         const mc = p.marketCap || 0;
                         if (mc > highestMc) highestMc = mc;
-                    });
-
-                    setStats({
-                        launched: targetCAs.length,
-                        bonded: 8,
-                        athMc: '$403K'
                     });
 
                     const tokenMap = new Map();

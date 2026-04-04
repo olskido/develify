@@ -13,8 +13,8 @@ export default function HomePage() {
       <Hero />
 
       <StatsRow />
-      <LaunchedProjects />
       <SummaryStats />
+      <LaunchedProjects />
       <Footer />
     </div>
   )
