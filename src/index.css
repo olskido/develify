@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Orbitron", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: #0a0a0a;
+  --color-surface: #141416;
+  --color-surface-elevated: #1a1a1d;
+  --color-accent: #ffd700;
+  --color-accent-dim: #c9a227;
+  --color-mint: #4ade80;
+  --color-mint-bright: #00ff66;
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+@layer base {
+  html {
+    @apply antialiased scroll-smooth;
+  }
+  body {
+    @apply bg-[var(--color-bg)] text-zinc-100 font-sans min-h-screen;
+    font-family: var(--font-sans);
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.text-stencil {
+  letter-spacing: 0.2em;
+  font-family: var(--font-display);
+}
+
+.chart-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 28px;
+}

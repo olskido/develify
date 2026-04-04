@@ -1,0 +1,43 @@
+import { Link } from 'react-router-dom'
+import { Activity, Send } from 'lucide-react'
+import { social, profile } from '../../data/projects'
+
+export default function Header() {
+  return (
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0a0a]/90 backdrop-blur-md">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+        <Link to="/" className="flex items-center gap-2">
+          <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-[#ffd700]/30 shadow-md">
+            <img src={profile.avatarUrl || '/images/develify-avatar.png'} alt="Logo" className="h-full w-full object-cover" />
+          </span>
+          <span className="font-display text-lg font-bold tracking-tight text-[#ffd700] sm:text-xl">
+            develify
+            <span className="hidden sm:inline"> Portfolio</span>
+          </span>
+        </Link>
+        <div className="flex items-center gap-3 text-zinc-300">
+          <a
+            href={social.twitter}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-lg p-2 transition hover:bg-white/10 hover:text-white"
+            aria-label="X (Twitter)"
+          >
+            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a
+            href={social.telegram}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-lg p-2 transition hover:bg-white/10 hover:text-white"
+            aria-label="Telegram"
+          >
+            <Send className="h-5 w-5" />
+          </a>
+        </div>
+      </div>
+    </header>
+  )
+}
