@@ -18,8 +18,6 @@ export default function TechnicalIntel({ ticker, mintAddress }) {
       copy: !!mintAddress,
       highlight: false,
     },
-    { label: 'Mint Authority', value: 'Renounced', highlight: 'green' },
-    { label: 'Freeze Authority', value: 'Disabled', highlight: 'green' },
     { label: 'LP Status', value: 'Burned 100%', highlight: 'green' },
   ]
 
@@ -48,11 +46,10 @@ export default function TechnicalIntel({ ticker, mintAddress }) {
             <span className="text-zinc-500">{r.label}</span>
             <span className="flex min-w-0 items-center gap-2 text-right">
               <span
-                className={`truncate ${
-                  r.highlight === 'green'
+                className={`truncate ${r.highlight === 'green'
                     ? 'font-medium text-[#00ff66]'
                     : 'text-zinc-200'
-                }`}
+                  }`}
               >
                 {r.value}
               </span>

@@ -11,7 +11,7 @@ export default function LaunchedProjects() {
         <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="font-display text-xl font-bold text-white sm:text-2xl">
-              Launched Projects
+              Launched COINS
             </h2>
             <p className="mt-1 text-sm text-zinc-500">
               Verified developer track record ({tokens.length} tokens)
@@ -31,7 +31,7 @@ export default function LaunchedProjects() {
         <div className="grid gap-6 [grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr))]">
           {tokens.map((p) => (
             <ProjectCard key={p.id} {...p} />
-          ))}
+          ))}.
         </div>
       </div>
     </section>

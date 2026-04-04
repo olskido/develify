@@ -2,7 +2,7 @@ import { Navigate, useParams } from 'react-router-dom'
 import TokenNav, { BackLink } from '../../components/TokenNav/TokenNav'
 
 import TokenHero from '../../components/TokenHero/TokenHero'
-import TokenStatsRow from '../../components/TokenStatsRow/TokenStatsRow'
+
 import MarketChart from '../../components/MarketChart/MarketChart'
 
 import TokenSidebar from '../../components/TokenSidebar/TokenSidebar'
@@ -33,12 +33,6 @@ export default function TokenDetailPage() {
         <div className="lg:grid lg:grid-cols-[1fr_min(360px,34%)] lg:gap-10">
           <div>
             <BackLink />
-            <TokenStatsRow
-              volume24h={project.volume24h}
-              volumeChange={project.volumeChange}
-              liquidity={project.liquidity}
-              holders={project.holders}
-            />
             <div className="mt-8 space-y-8">
               <MarketChart mintAddress={project.mintAddress} />
 

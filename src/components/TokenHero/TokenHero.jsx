@@ -1,11 +1,14 @@
 export default function TokenHero({ ticker, currentCap, athTarget, imageUrl }) {
   return (
     <section className="relative min-h-[220px] overflow-hidden sm:min-h-[280px] lg:min-h-[320px]">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${imageUrl})` }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0d0e12] via-[#0d0e12]/85 to-[#0d0e12]/40" />
+      <div className="absolute inset-0 z-0">
+        <img
+          src={imageUrl}
+          alt={`${ticker} Hero`}
+          className="h-full w-full object-contain bg-[#0d0e12] opacity-40"
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0d0e12] via-[#0d0e12]/85 to-transparent pointer-events-none" />
       <div className="relative mx-auto flex max-w-7xl flex-col justify-end px-4 pb-8 pt-16 sm:px-6 sm:pb-10 sm:pt-20">
         <h1 className="font-display text-4xl font-extrabold italic tracking-tight text-white sm:text-5xl lg:text-6xl">
           {ticker}
