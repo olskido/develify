@@ -10,15 +10,15 @@ export default function SummaryStats() {
           <p className="text-[10px] font-medium uppercase tracking-wider text-zinc-500 sm:text-xs">
             Launched
           </p>
-          <p className="mt-1 font-display text-xl font-bold text-white sm:mt-2 sm:text-3xl">
+          <p className="mt-1 font-display text-lg font-bold text-white sm:mt-2 sm:text-2xl">
             {stats.launched}
           </p>
         </div>
-        <div className="rounded-xl border border-white/10 bg-[#141416] p-3 text-center sm:rounded-2xl sm:p-5">
+        <div className="rounded-xl border border-white/10 bg-[#141416] p-3 text-center flex flex-col justify-center sm:rounded-2xl sm:p-5">
           <p className="text-[10px] font-medium uppercase tracking-wider text-zinc-500 sm:text-xs">
             Bonded
           </p>
-          <p className="mt-1 font-display text-xl font-bold text-[#4ade80] sm:mt-2 sm:text-3xl">
+          <p className="mt-1 font-display text-lg font-bold text-[#4ade80] sm:mt-2 sm:text-2xl">
             {stats.bonded}
           </p>
         </div>
@@ -26,7 +26,7 @@ export default function SummaryStats() {
           <p className="text-[10px] font-medium uppercase tracking-wider text-zinc-500 sm:text-xs">
             ATH
           </p>
-          <p className="mt-1 font-display text-lg font-bold text-white sm:mt-2 sm:text-2xl">
+          <p className="mt-1 font-display text-base font-bold text-white sm:mt-2 sm:text-xl">
             {stats.athMc}
           </p>
         </div>
