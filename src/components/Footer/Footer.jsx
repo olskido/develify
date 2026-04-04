@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Activity, Send } from 'lucide-react'
-import { social } from '../../data/projects'
+import { social, profile } from '../../data/projects'
 
 export default function Footer() {
   return (
@@ -9,8 +9,8 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <Link to="/" className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#ffd700] text-black">
-                <Activity className="h-5 w-5" strokeWidth={2.5} />
+              <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-[#ffd700]/30 shadow-md">
+                <img src={profile.avatarUrl || '/images/develify-avatar.png'} alt="Logo" className="h-full w-full object-cover" />
               </span>
               <span className="font-display font-bold text-[#ffd700]">
                 develify Portfolio
