@@ -25,7 +25,7 @@ export default function TokenDetailPage() {
       <TokenHero
         ticker={project.ticker}
         currentCap={project.currentCap}
-        athTarget={project.athTarget}
+        ath={project.ath}
         imageUrl={project.heroImage ?? project.image}
       />
 

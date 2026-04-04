@@ -48,8 +48,8 @@ export function LiveTokensProvider({ children }) {
 
                     setStats({
                         launched: targetCAs.length,
-                        bonded: bondedPairs.length,
-                        athMc: highestMc
+                        bonded: 8,
+                        athMc: '$403K'
                     });
 
                     const tokenMap = new Map();
@@ -90,7 +90,7 @@ export function LiveTokensProvider({ children }) {
                             pumpFunUrl: `https://pump.fun/${ca}`,
                             xCommunityUrl: pair.info?.socials?.find(s => s.type === 'twitter')?.url || staticProj.xCommunityUrl,
                             currentMc: `$${(pair.marketCap || 0).toLocaleString()}`,
-                            athMc: `$${(pair.marketCap || 0).toLocaleString()}`,
+                            athMc: staticProj.athMc || `$${(pair.marketCap || 0).toLocaleString()}`,
                             currentCap: `$${(pair.marketCap || 0).toLocaleString()}`,
                             volume24h: `$${(pair.volume?.h24 || 0).toLocaleString()}`,
                             volumeChange: `${pair.priceChange?.h24 || 0}%`,

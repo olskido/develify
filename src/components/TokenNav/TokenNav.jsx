@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom'
 import { Activity, ArrowLeft, Send } from 'lucide-react'
-import { social } from '../../data/projects'
+import { social, profile } from '../../data/projects'
 
 export default function TokenNav() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0d0e12]/95 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
         <Link to="/" className="flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#ffcc00] text-black">
-            <Activity className="h-5 w-5" strokeWidth={2.5} />
+          <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-[#ffd700]/30 shadow-md">
+            <img src={profile.avatarUrl || '/images/develify-avatar.png'} alt="Logo" className="h-full w-full object-cover" />
           </span>
           <span className="font-display text-sm font-bold text-[#ffcc00] sm:text-base">
             develify Portfolio

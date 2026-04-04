@@ -29,6 +29,7 @@ export const projects = [
     addressShort: 'FfjLgazvJBApdq6Tyn2pRvZUkPqhtp4VyeVEJENypump',
     image: '/images/warbros-banner.png',
     heroImage: '/images/warbros-banner.png',
+    athMc: '$403,000',
   },
   {
     id: 'book-of-memes',
@@ -37,6 +38,7 @@ export const projects = [
     addressShort: 'FWuimB9mNPQCYKeKjtH11Wwqx5vKwVuz4FjVCAfNpump',
     image: '/images/book-of-memes-banner.png',
     heroImage: '/images/book-of-memes-banner.png',
+    athMc: '$38,000',
   },
   {
     id: 'Unstable Donald Trump',
@@ -45,6 +47,7 @@ export const projects = [
     addressShort: 'GvfG2zmxZd5e5MGmorDKwwTR2zwd8Xm6ASEtEZ7Gpump',
     image: '/images/usdt.png',
     heroImage: '/images/usdt.png',
+    athMc: '$72,000',
   },
   {
     id: 'emojew',
@@ -53,6 +56,7 @@ export const projects = [
     addressShort: '3iYPPzLQ6driv2JVhpD47nABfmf2Z9YL4hiqXG1Zpump',
     image: '/images/emojew.png',
     heroImage: '/images/emojew.png',
+    athMc: '$68,000',
   },
 
   {
@@ -62,6 +66,7 @@ export const projects = [
     addressShort: 'HDZHtKsEPbsRhcresr5taTGbrK6NfLZPpiYHRNdopump',
     image: '/images/patty.png',
     heroImage: '/images/patty.png',
+    athMc: '$195,000',
   },
   {
     id: 'whalepin',
@@ -70,6 +75,7 @@ export const projects = [
     addressShort: 'Gi9oeTWMY5NDrhfMm6DrFXk7z1Gj1nxsP9RB58uHpump',
     image: '/images/whalepippin.png',
     heroImage: '/images/whalepippin.png',
+    athMc: '$64,000',
   },
 
   {
@@ -79,6 +85,7 @@ export const projects = [
     addressShort: 'EogtR3RcBkt5xw8d8BcYTBHpEJzJqrChTzZdv2Zupump',
     image: '/images/awif.png',
     heroImage: '/images/awif.png',
+    athMc: '$69,000',
   },
   {
     id: 'noval',
@@ -87,6 +94,7 @@ export const projects = [
     addressShort: 'E57jJNL9bz4w8RHe6tZGvgKXbqcHQBDKSus5QTwUpump',
     image: '/images/noval.png',
     heroImage: '/images/noval.png',
+    athMc: '$20,000',
   },
   {
     id: 'gbunny',
@@ -95,6 +103,7 @@ export const projects = [
     addressShort: 'DZtVLPvSj2qjwq6dToWEnKJeVWopb1Qer9ePVNoQpump',
     image: '/images/the-golden-bunny.png',
     heroImage: '/images/the-golden-bunny.png',
+    athMc: '$32,000',
   },
   {
     id: 'wpigeon',
@@ -103,6 +112,7 @@ export const projects = [
     addressShort: 'GwMmiSLJ2ce5TY9bhTJCrbK8QNYgJETayDDaT3uJpump',
     image: '/images/wpigeon.png',
     heroImage: '/images/wpigeon.png',
+    athMc: '$104,000',
   }
 ]
 
