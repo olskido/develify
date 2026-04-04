@@ -2,19 +2,8 @@
 import { createContext, useState, useEffect, useContext } from 'react';
 import { projects as staticProjects } from '../data/projects';
 
-// The CA list exactly as provided by user
-const targetCAs = [
-    'FWuimB9mNPQCYKeKjtH11Wwqx5vKwVuz4FjVCAfNpump',
-    'GvfG2zmxZd5e5MGmorDKwwTR2zwd8Xm6ASEtEZ7Gpump',
-    '3iYPPzLQ6driv2JVhpD47nABfmf2Z9YL4hiqXG1Zpump',
-    'HDZHtKsEPbsRhcresr5taTGbrK6NfLZPpiYHRNdopump',
-    'FfjLgazvJBApdq6Tyn2pRvZUkPqhtp4VyeVEJENypump',
-    'Gi9oeTWMY5NDrhfMm6DrFXk7z1Gj1nxsP9RB58uHpump',
-    'EogtR3RcBkt5xw8d8BcYTBHpEJzJqrChTzZdv2Zupump',
-    'E57jJNL9bz4w8RHe6tZGvgKXbqcHQBDKSus5QTwUpump',
-    'DZtVLPvSj2qjwq6dToWEnKJeVWopb1Qer9ePVNoQpump',
-    'GwMmiSLJ2ce5TY9bhTJCrbK8QNYgJETayDDaT3uJpump'
-];
+// Dynamically compute the CA list straight from the configured project definition 
+const targetCAs = staticProjects.map(p => p.mintAddress).filter(Boolean);
 
 export const LiveTokensContext = createContext(null);
 
@@ -83,9 +72,10 @@ export function LiveTokensProvider({ children }) {
                             mintAddress: ca,
                             pumpFunUrl: `https://pump.fun/${ca}`,
                             xCommunityUrl: pair.info?.socials?.find(s => s.type === 'twitter')?.url || staticProj.xCommunityUrl,
-                            currentMc: `$${(pair.marketCap || 0).toLocaleString()}`,
+                            currentMc: staticProj.currentMc || `$${(pair.marketCap || 0).toLocaleString()}`,
                             athMc: staticProj.athMc || `$${(pair.marketCap || 0).toLocaleString()}`,
-                            currentCap: `$${(pair.marketCap || 0).toLocaleString()}`,
+                            currentCap: staticProj.currentMc || `$${(pair.marketCap || 0).toLocaleString()}`,
+                            ath: staticProj.ath || staticProj.athMc || `$${(pair.marketCap || 0).toLocaleString()}`,
                             volume24h: `$${(pair.volume?.h24 || 0).toLocaleString()}`,
                             volumeChange: `${pair.priceChange?.h24 || 0}%`,
                             liquidity: `$${(Math.round(pair.liquidity?.usd || 0)).toLocaleString()}`,
