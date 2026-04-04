@@ -30,10 +30,10 @@ export default function TokenDetailPage() {
       />
 
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:py-10">
+        <BackLink />
         <div className="lg:grid lg:grid-cols-[1fr_min(360px,34%)] lg:gap-10">
           <div>
-            <BackLink />
-            <div className="mt-8 space-y-8">
+            <div className="space-y-8">
               <MarketChart mintAddress={project.mintAddress} />
 
             </div>
