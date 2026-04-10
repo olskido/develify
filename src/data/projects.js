@@ -131,6 +131,16 @@ export const projects = [
     heroImage: '/images/wpigeon.png',
     athMc: '$104,000',
     currentMc: '$1,700'
+  },
+  {
+    id: 'wurbros',
+    name: 'WUR BROS',
+    ticker: '$WURBROS',
+    mintAddress: '4z7BzyrvfaBoh5R6ad2gpwAayyPaSLizV7cPcfeqpump',
+    image: '/images/wurbros.png',
+    heroImage: '/images/wurbros.png',
+    athMc: '$38,700',
+    currentMc: '$1,500'
   }
 ]
 
