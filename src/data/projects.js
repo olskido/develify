@@ -25,6 +25,50 @@ export const profile = {
 
 export const projects = [
   {
+    id: 'Risk',
+    name: 'RISK',
+    ticker: '$RISK',
+    mintAddress: 'EdyNYYCXxxh76LHx5Lyp24wkAbUjxk7UavwdT8PSpump',
+    image: '/images/buscuit.jpeg',
+    heroImage: '/images/buscuit.jpeg',
+    athMc: '$40,400',
+    currentMc: '$2,740'
+  },
+
+  {
+    id: 'THEONE',
+    name: 'THEONE',
+    ticker: '$THEONE',
+    mintAddress: 'FMsL3bkizj3523TtFhUgXNJPLF6jqv7cYv3jPnJApump',
+    image: '/images/THEONE.PNG',
+    heroImage: '/images/THEONE.PNG',
+    athMc: '$195,000',
+    currentMc: '$2,790'
+  },
+
+  {
+    id: 'MAY',
+    name: 'MAY',
+    ticker: '$MAY',
+    mintAddress: '8grnfSnKs23V6JbsriYUw2bWiaUJRZBxAAWFnLAHpump',
+    image: '/images/may.png',
+    heroImage: '/images/may.png',
+    athMc: '$28,200',
+    currentMc: '$2,600'
+  },
+
+  {
+    id: 'TAF',
+    name: 'TAF',
+    ticker: '$TAF',
+    mintAddress: '3rQQC24ZRELg1YM3NGCh7Scjosz5dJHCvWEUs4Nwpump',
+    image: '/images/Taf.png',
+    heroImage: '/images/Taf.png',
+    athMc: '$41,800',
+    currentMc: '$1,650'
+  },
+
+  {
     id: 'May4th',
     name: 'May4th',
     ticker: '$MAY4TH',
