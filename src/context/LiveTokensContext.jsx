@@ -15,8 +15,8 @@ export function LiveTokensProvider({ children }) {
     const [tokens, setTokens] = useState(staticProjects);
     const [stats, setStats] = useState({
         launched: targetCAs.length,
-        bonded: 8,
-        athMc: '$425,000'
+        bonded: 16,
+        athMc: '$458,000'
     });
 
     useEffect(() => {

@@ -24,6 +24,30 @@ export const profile = {
 }
 
 export const projects = [
+
+  {
+    id: 'BULL',
+    name: 'BULL',
+    ticker: '$BULL',
+    mintAddress: '3dmNDj7pZBbnAJmqYEtkxFNxL1UdS5zZCuvzXutupump',
+    image: '/images/bull.jpeg',
+    heroImage: '/images/bull.jpeg',
+    athMc: '$49,700',
+    currentMc: '$6,760'
+  },
+
+  {
+    id: 'TOPLESS',
+    name: 'TOPLESS',
+    ticker: '$TOPLESS',
+    mintAddress: 'EuDGQRFvuDezFXsrPwA9XbeWj6PkgdVfKUuef7qBpump',
+    image: '/images/topless.jpeg',
+    heroImage: '/images/topless.jpeg',
+    athMc: '$458,000',
+    currentMc: '$4,450'
+  },
+
+
   {
     id: 'Risk',
     name: 'RISK',
